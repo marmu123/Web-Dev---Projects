@@ -16,4 +16,7 @@ https://www.cs.ubbcluj.ro/~bufny/wp-content/uploads/css-pr3-2.png
 D.
 https://www.cs.ubbcluj.ro/~bufny/wp-content/uploads/css-pr4.png
 
-
+(3)
+A. La un dubluclick pe un element al primei liste, acesta va fi mutat in lista a doua si invers.
+B. Formular simplu.
+C. Memory Game.
