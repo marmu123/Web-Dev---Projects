@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fisa stomatologica</title>
+
+</head>
+<body>
+<h1>Medic stomatolog - Medicul Popescu</h1>
+<div>
+    <a href="http://www.mediculpopescu.ro" target="_blank">www.mediculpopescu.ro</a>
+    <br>
+    <br>
+    <img title="Site-ul medicului Popescu" alt="Image missing." height="150" width="200" src="../images/dintisor.jpg">
+    <br>
+    <br>
+</div>
+<form method="GET">
+    <fieldset>
+        <legend><b>Fisa stomatologica</b></legend>
+        <br>
+        <div>
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <table>
+                            <tr><th colspan="4" >Date pacient</th></tr>
+                            <tr>
+                                <td><span>Nume</span></td>
+                                <td><input maxlength="20"></td>
+                                <td><span>Oras</span></td>
+                                <td><input></td>
+                            </tr>
+                            <tr>
+                                <td><span>Prenume</span></td>
+                                <td><input type="text" maxlength="20"></td>
+                                <td><span>Telefon</span></td>
+                                <td><input></td>
+                            </tr>
+                            <tr>
+                                <td><span>Nr. fisa</span></td>
+                                <td><input type="number"></td>
+                                <td><span>Email</span></td>
+                                <td><input></td>
+                            </tr>
+                            <tr>
+                                <td><span>CNP</span></td>
+                                <td><input maxlength="13"></td>
+                                <td><span>Asigurat</span></td>
+                                <td><input value="DA" readonly></td>
+                            </tr>
+                            <tr>
+                                <td>Sex</td>
+                                <td>
+                                    <input id="male" type="radio"  name="sex" value="male" checked>
+                                    <label for="male">M</label>
+                                    <input id="female" type="radio" name="sex" value="female">
+                                    <label for="female">F</label>
+                                </td>
+                                <td colspan="2"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <table>
+                            <tr><td colspan="4"><strong>Tratamente</strong></td></tr>
+                            <tr>
+                                <th>Nr</th>
+                                <th>Data</th>
+                                <th>Tip</th>
+                                <th>Tarif</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><input></td>
+                                <td><input></td>
+                                <td><input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><input></td>
+                                <td><input></td>
+                                <td><input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><input></td>
+                                <td><input></td>
+                                <td><input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><input></td>
+                                <td><input></td>
+                                <td><input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><input></td>
+                                <td><input></td>
+                                <td><input type="number"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <p>Mentiuni</p>
+                    </td>
+                    <td colspan="3">
+                        <table>
+                            <tr>
+                                <td>Sensib. la temperatura</td>
+                                <td>Toleranta anestezic</td>
+                                <td>Infectie</td>
+                            </tr>
+                            <tr>
+                                <td >
+                                    <input type="checkbox" id="checkSensitivity" name="checkSensitivity">
+                                </td>
+                                <td >
+                                    <input type="checkbox" id="checkTolerance" name="checkTolerance">
+                                </td>
+                                <td >
+                                    <input type="checkbox" id="checkInfection" name="checkInfection" disabled>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Alergii
+                    </td>
+                    <td colspan="3">
+                        <table>
+                            <tr>
+                                <td >
+                                    <ol type="a">
+                                        <li>Anestezic
+                                            <ul>
+                                                <li><input type="checkbox" name="checkAnesthetic" id="checkAnesthetic1">Articaina</li>
+                                                <li><input type="checkbox" name="checkAnesthetic" id="checkAnesthetic2">Prilocaina</li>
+                                            </ul>
+                                        </li>
+                                        <li>Amalgam
+                                            <ul>
+                                                <li><input type="checkbox" name="checkAmalgam" id="checkAmalgam1">Tip 1</li>
+                                                <li><input type="checkbox" name="checkAmalgam" id="checkAmalgam2">Tip 2</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Altele
+                                            <ul>
+                                                <li><input></li>
+                                                <li><input></li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Observatii
+                    </td>
+                    <td colspan="3">
+                        <textarea rows="6" cols="55"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Severitate
+                    </td>
+                    <td>
+                        <input type="number" id="points" min="0" max="100" name="points" step="10">
+                    </td>
+                    <td>
+                        Sugestii
+                    </td>
+                    <td>
+                        <select size="4" multiple>
+                            <option>Tratament 1</option>
+                            <option>Tratament 2</option>
+                            <option>Medicament 1</option>
+                            <option>Medicament 2</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

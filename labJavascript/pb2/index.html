@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="scripts.js" async></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<form name="myForm" action="ceva.php" onsubmit="return validateForm()" method="POST">
+    <input type="text" name="userName" placeholder="Name"><br>
+    <div>
+        <label for="daySelect">Day:</label>
+        <select id="daySelect" name="daySelect"></select>
+        <label for="monthSelect">Month:</label>
+        <select id="monthSelect" name="monthSelect"></select>
+        <label for="yearSelect">Year</label>
+        <select id="yearSelect"  name="yearSelect"></select>
+    </div>
+    <input id="userAge" type="number" min="1" max="100" placeholder="Age" name="userAge"><br>
+    <input id="userEmail" type="email" placeholder="Email" name="userEmail"><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

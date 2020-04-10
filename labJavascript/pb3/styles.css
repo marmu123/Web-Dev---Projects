@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.board{
+    width:max-content;
+    margin: 0;
+    padding: 0;
+    perspective: 1000px;
+}
+.card {
+    width: 100px;
+    height: 66px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid gray;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+.card:hover{
+    box-shadow: 0 0 5px 0 black;
+}
+
+.card.flip{
+    transform: rotateY(180deg);
+}
