@@ -3,7 +3,7 @@ const imagesURLs=["html.jpg","css.jpg","js.jpg","rails.jpg","python.jpg","node.j
 var solved=[];
 var lastFlipped=null;
 var isPause=false;
-initGame();
+
 function initGame(rows=3,cols=4,images=imagesURLs) {
     var mainBoard=document.getElementById("board");
     solved=[];
@@ -33,7 +33,7 @@ function initGame(rows=3,cols=4,images=imagesURLs) {
 
         document.getElementById("board").appendChild(rowDiv);
     }
-    return cards;
+    return [cards,shuffleURL];
 }
 
 function shuffleCards(imagesURLs){
@@ -84,6 +84,23 @@ function flipCard(card, imageURL) {
 
 
 }
+
+function firstFlipAll() {
+    var param=initGame();
+    var cards=param[0];
+    var urls=param[1];
+    for(var i =0;i<urls.length;i++){
+        cards[i].classList.toggle("flip");
+        cards[i].setAttribute("src",urls[i]);
+    }
+    setTimeout(function () {
+        for(var i =0;i<urls.length;i++){
+            cards[i].classList.toggle("flip");
+            cards[i].setAttribute("src","backimg.jpg");
+        }
+    },1000);
+}
+
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
