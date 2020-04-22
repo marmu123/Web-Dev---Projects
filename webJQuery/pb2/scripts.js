@@ -93,3 +93,12 @@ function validateUserEmail(userEmail) {
 $("#userEmail").keyup(function () {
     validateUserEmail(this);
 });
+
+function validateForm() {
+    var err=validateUserName($("#userName"))+validateUserAge($("#userAge"))+validateUserEmail($("#userEmail"));
+    if(err!=="")
+        alert(err);
+    else
+        alert("Datele sunt corecte :)");
+    return false;
+}
