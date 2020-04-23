@@ -5,6 +5,8 @@
 }
 .board{
     width:max-content;
+    height: max-content;
+
     margin: 0;
     padding: 0;
     perspective: 1000px;
@@ -13,6 +15,7 @@
     width: 100px;
     height: 66px;
     padding: 5px;
+    text-align: center;
     cursor: pointer;
     border: 1px solid gray;
     transform-style: preserve-3d;
@@ -24,4 +27,7 @@
 
 .card.flip{
     transform: rotateY(180deg);
+}
+div{
+    padding: 5px;
 }
