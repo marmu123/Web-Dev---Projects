@@ -1,0 +1,12 @@
+
+table{
+    border: 1px solid #CCCCCC;
+    border-spacing:0.1em;
+    margin-bottom:1em;
+    margin-top:1em
+}
+
+th,td{
+    border:1px solid #CCCCCC;
+    padding:0.3em 1em
+}
